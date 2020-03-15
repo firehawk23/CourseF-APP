@@ -121,10 +121,6 @@
             android:onClick="login"
             android:text="Create Account"/>
 
-<<<<<<< HEAD
 
-
-=======
->>>>>>> 844c810f191550a240bfa6474d29963e5a62f250
     </LinearLayout>
 </ScrollView>
