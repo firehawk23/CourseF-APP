@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="FAQs"
+        android:textColor="#FF0000"
+        android:textSize="25sp"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView android:layout_marginTop="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/faq"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#0000FF"
+                android:onClick="ans"
+                android:text="1.What is CourseF?" />
+            <TextView
+                android:id="@+id/ans"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                android:text="CourseF is an AEF (Assessment, Evaluation, Feedback) ,an online tool for creating, distributing, and managing digital course evaluation surveys. At university level, it is primarily for conducting end of semester and midterm course evaluations." />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#0000FF"
+                android:onClick="q1"
+                android:text="2.When can I fill out my reviews?" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:textColor="#FFFFFF"
+                android:id="@+id/ans2"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="In most instances, course evaluations will be released two weeks before the end of the semester. You will receive a notice when your course evaluations are available.    Some courses also conduct midterm evaluations in AEF. Midterm evaluations usually happen around weeks five to seven of the semester. You will be notified  when midterm evaluations are available. " />
+            <TextView
+                android:layout_width="fill_parent"
+                android:textColor="#0000FF"
+                android:onClick="q2"
+                android:layout_height="wrap_content"
+                android:text="3.Where do I fill my evaluations?" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/ans3"
+                android:text="Log into the CourseF app (Downloaded from playstore or https://CourseF.edu) with your ID credentials to fill out your course evaluations. Your courses can be found under your department and section respectively." />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#0000FF"
+                android:onClick="q3"
+                android:text="4.I have logged into CourseF and why cant I find the evaluations for my courses?" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:id="@+id/ans4"
+                android:visibility="gone"
+                android:text=" Not all departments conduct their course evaluations at the same time period. Confirm with your instructor that you should be accessing your course evaluation in CourseF.If your instructor confirms that you should see the evaluation in CourseF or if you have received an notification stating that your evaluation is available in CourseF, clear your app cache and cookies and try logging in again. If you still don't see the evaluation, contact the  Help Desk at CourseFoffc@gmail.com." />
+        </LinearLayout>
+    </ScrollView>
+</android.widget.RelativeLayout>
